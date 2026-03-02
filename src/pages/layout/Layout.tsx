@@ -5,6 +5,7 @@ import AboutResort from "../aboutPage/About"
 import GridLayout from "../../components/GridLayout"
 import Banner from "../../components/banners/FacilitiesBanner"
 import FacilityPage from "../facilityPage/FacilityPage"
+import HotelRooms from "../roomsPackagesPage/roomsPackagesPage"
 
 
 const Layout = () => {
@@ -23,6 +24,9 @@ const Layout = () => {
                 </div>
                 <div className="mt-6">
                     <FacilityPage />
+                </div>
+                <div>
+                    <HotelRooms />
                 </div>
             </Box>
         </Box>
