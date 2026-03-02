@@ -5,9 +5,13 @@ import AboutResort from "../aboutPage/About"
 import GridLayout from "../../components/GridLayout"
 import Banner from "../../components/banners/FacilitiesBanner"
 import FacilityPage from "../facilityPage/FacilityPage"
+
+import HotelRooms from "../roomsPackagesPage/roomsPackagesPage"
+
 import ExclusiveOffers from "../exclusive packages/exclusivePage"
 import ExclusiveRatings from "../exclusiveRatings/ratingPage"
 import OffersPage from "../specialOffers/OffersPage"
+
 
 const Layout = () => {
     return (
@@ -27,6 +31,9 @@ const Layout = () => {
                     <FacilityPage />
                 </div>
                 <div>
+
+                    <HotelRooms />
+
                     <ExclusiveOffers />
                 </div>
                 <div>
@@ -34,6 +41,7 @@ const Layout = () => {
                 </div>
                 <div>
                     <OffersPage />
+
                 </div>
             </Box>
         </Box>
