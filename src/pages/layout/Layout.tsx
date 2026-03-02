@@ -31,10 +31,10 @@ const Layout = () => {
                     <FacilityPage />
                 </div>
                 <div>
-
-                    <HotelRooms />
-
                     <ExclusiveOffers />
+                </div>
+                <div>
+                    <HotelRooms />
                 </div>
                 <div>
                     <ExclusiveRatings />
