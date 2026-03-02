@@ -1,6 +1,7 @@
 import { Box, Container, Typography, Button } from "@mui/material";
 import { Phone } from "@mui/icons-material";
-import pic from "../../assets/about/nicholas-ng-cHB4nr-vPC8-unsplash.jpg";
+import leftPic from "../../assets/about/nicholas-ng-cHB4nr-vPC8-unsplash.jpg";
+import rightPic from "../../assets/background/sasha-kaunas-TAgGZWz6Qg8-unsplash.jpg";
 
 const AboutResort = () => {
   return (
@@ -39,7 +40,7 @@ const AboutResort = () => {
             rgba(251, 191, 36, 0.6),
             transparent
           );
-          animation: sweepDown 1.8s ease-in-out forwards;
+          animation: sweepDown 1.8s ease-in-out infinite;
           z-index: 1;
           pointer-events: none;
         }
@@ -67,7 +68,7 @@ const AboutResort = () => {
             rgba(251, 191, 36, 0.5),
             transparent
           );
-          animation: sweepRight 2s ease-in-out forwards;
+          animation: sweepRight 2s ease-in-out infinite;
           z-index: 1;
           pointer-events: none;
         }
@@ -115,10 +116,11 @@ const AboutResort = () => {
         .collage-img-top {
           position: absolute;
           top: 0;
-          right: 0;
+          right: -10px;
           width: 62%;
           height: 220px;
           border-radius: 8px;
+          border: 2px solid #e5e7eb;
           overflow: hidden;
           box-shadow: 0 8px 30px rgba(0,0,0,0.12);
           z-index: 1;
@@ -310,7 +312,7 @@ const AboutResort = () => {
             <div className="collage-wrapper">
               {/* Top-right image */}
               <div className="collage-img-top">
-                <img src={pic} alt="Resort nature" className="img-top" />
+                <img src={rightPic} alt="Resort nature" className="img-top" />
               </div>
 
               {/* "Started in" stat */}
@@ -344,7 +346,7 @@ const AboutResort = () => {
 
               {/* Bottom-left image */}
               <div className="collage-img-bottom">
-                <img src={pic} alt="Resort guest" className="img-bottom" />
+                <img src={leftPic} alt="Resort guest" className="img-bottom" />
               </div>
             </div>
           </Box>
