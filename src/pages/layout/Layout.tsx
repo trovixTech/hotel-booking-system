@@ -5,7 +5,9 @@ import AboutResort from "../aboutPage/About"
 import GridLayout from "../../components/GridLayout"
 import Banner from "../../components/banners/FacilitiesBanner"
 import FacilityPage from "../facilityPage/FacilityPage"
-
+import ExclusiveOffers from "../exclusive packages/exclusivePage"
+import ExclusiveRatings from "../exclusiveRatings/ratingPage"
+import OffersPage from "../specialOffers/OffersPage"
 
 const Layout = () => {
     return (
@@ -23,6 +25,15 @@ const Layout = () => {
                 </div>
                 <div className="mt-6">
                     <FacilityPage />
+                </div>
+                <div>
+                    <ExclusiveOffers />
+                </div>
+                <div>
+                    <ExclusiveRatings />
+                </div>
+                <div>
+                    <OffersPage />
                 </div>
             </Box>
         </Box>
