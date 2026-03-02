@@ -30,11 +30,7 @@ const NewsletterSection = () => {
       {/* 1. පොල් ගෙඩිය සහ මාතෘකාව (Fade Down Animation) */}
       <Box data-aos="fade-down">
         <Box sx={{ mb: 2 }}>
-          <img 
-            src="https://cdn-icons-png.flaticon.com/512/1047/1047551.png" 
-            alt="Icon" 
-            style={{ width: '50px' }} 
-          />
+          
         </Box>
         <Typography 
           variant="h3" 
