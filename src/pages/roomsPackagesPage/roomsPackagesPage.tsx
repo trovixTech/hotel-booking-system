@@ -12,7 +12,7 @@ export default function HotelRooms() {
   const [active, setActive] = useState(0);
 
   return (
-    <div className="min-h-screen bg-[#f6f3ee] px-6 py-12">
+    <div className="min-h-screen bg-[#f6f3ee] px-6 py-28">
       <div className="mx-auto max-w-7xl flex flex-col lg:flex-row gap-8">
         
         {/* Left menu */}

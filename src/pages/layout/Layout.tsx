@@ -5,7 +5,7 @@ import AboutResort from "../aboutPage/About"
 import GridLayout from "../../components/GridLayout"
 import Banner from "../../components/banners/FacilitiesBanner"
 import FacilityPage from "../facilityPage/FacilityPage"
-
+import TextLineBanner from "../../components/banners/textLineBanner"
 import HotelRooms from "../roomsPackagesPage/roomsPackagesPage"
 
 import ExclusiveOffers from "../exclusive packages/exclusivePage"
@@ -30,10 +30,14 @@ const Layout = () => {
                 <div className="mt-6">
                     <FacilityPage />
                 </div>
-                <div>
-
+                <div className="relative">
                     <HotelRooms />
+                    <div className="absolute bottom-[-50px] left-0 right-0">
+                        <TextLineBanner />
+                    </div>
+                </div>
 
+                <div>
                     <ExclusiveOffers />
                 </div>
                 <div>
