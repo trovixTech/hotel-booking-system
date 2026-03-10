@@ -190,7 +190,7 @@ const AboutResort = () => {
       <Container data-aos="fade-up" maxWidth="lg">
         <Box
           sx={{
-            marginTop: { xs: "4rem", sm: "6rem", md: "10rem" },
+            marginTop: { xs: "1rem", sm: "3rem", md: "5rem" },
             display: "flex",
             flexDirection: { xs: "column", md: "row" },
             justifyContent: "center",
