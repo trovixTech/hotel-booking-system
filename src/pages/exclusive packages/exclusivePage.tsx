@@ -1,5 +1,3 @@
-import React from "react";
-
 import {
   Box,
   Container,
@@ -31,16 +29,32 @@ const offers = [
   },
 ];
 
+const agencies = [
+  {
+    name: "TripAdvisor",
+    logo: "../../../public/logo/advisor.png"
+  },
+  {
+    name: "Expedia",
+    logo: "../../../public/logo/expedia.fr.png"
+  },
+  {
+    name: "MakeMyTrip",
+    logo: "../../../public/logo/my.png"
+  },
+  {
+    name: "Cleartrip",
+    logo: "../../../public/logo/cleartrips.png"
+  }
+];
+
 const ExclusiveOffers = () => {
   return (
     <Box sx={{ backgroundColor: "#f8f8f8", py: 10 }}>
       <Container maxWidth="lg">
         {/* Section Title */}
         <Box textAlign="center" mb={6}>
-          <Typography
-            variant="h3"
-            sx={{ fontFamily: "Georgia, serif", mb: 1 }}
-          >
+          <Typography variant="h3" sx={{ fontFamily: "Georgia, serif", mb: 1 }}>
             Exclusive offers
           </Typography>
           <Typography variant="body2" color="text.secondary">
@@ -89,10 +103,7 @@ const ExclusiveOffers = () => {
                   textAlign: "center",
                 }}
               >
-                <Typography
-                  variant="caption"
-                  sx={{ letterSpacing: 2, mb: 1 }}
-                >
+                <Typography variant="caption" sx={{ letterSpacing: 2, mb: 1 }}>
                   {offer.tag}
                 </Typography>
 
@@ -136,32 +147,24 @@ const ExclusiveOffers = () => {
             flexWrap: "wrap",
           }}
         >
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Tripadvisor_logo.svg"
-            alt="Tripadvisor"
-            height="28"
-          />
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/5/5e/MakeMyTrip_Logo.png"
-            alt="MakeMyTrip"
-            height="28"
-          />
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/5/5b/Expedia_Logo_2022.svg"
-            alt="Expedia"
-            height="28"
-          />
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Cleartrip_logo.png"
-            alt="Cleartrip"
-            height="28"
-          />
+          {agencies.map((agency, index) => (
+            <Box key={index}>
+              <img src={agency.logo} alt={agency.name} className="rounded-full w-10 shadow p-1" />
+            </Box>
+          ))}
         </Box>
 
         {/* Bottom Note */}
         <Box textAlign="center" mt={4}>
           <Typography variant="body2">
-            <strong style={{ background: "#000", color: "#fff", padding: "2px 6px", marginRight: 8 }}>
+            <strong
+              style={{
+                background: "#000",
+                color: "#fff",
+                padding: "2px 6px",
+                marginRight: 8,
+              }}
+            >
               AWESOME
             </strong>
             Get 20% discount on hotels booking with above websites.

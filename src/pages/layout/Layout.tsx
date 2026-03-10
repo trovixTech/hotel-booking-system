@@ -2,7 +2,6 @@ import { Box } from "@mui/material"
 import Navbar from "../../components/Navbar"
 import Home from "../homePage/Home"
 import AboutResort from "../aboutPage/About"
-import GridLayout from "../../components/GridLayout"
 import Banner from "../../components/banners/FacilitiesBanner"
 import FacilityPage from "../facilityPage/FacilityPage"
 import TextLineBanner from "../../components/banners/textLineBanner"
@@ -39,6 +38,9 @@ const Layout = () => {
 
                 <div>
                     <ExclusiveOffers />
+                </div>
+                <div>
+                    <HotelRooms />
                 </div>
                 <div>
                     <ExclusiveRatings />
