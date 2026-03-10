@@ -122,11 +122,11 @@ const Home = () => {
           <Box key={type} className="flex justify-between items-center mb-3 last:mb-0">
             <Typography className="capitalize font-medium">{type}</Typography>
             <Box className="flex items-center gap-3">
-              <IconButton size="small" onClick={() => setGuests({...guests, [type]: Math.max(0, guests[type] - 1)})} disabled={type !== 'children' && guests[type] <= 1}>
+              <IconButton size="small" onClick={() => setGuests({...guests, [type]: Math.max(0, guests[type as keyof typeof guests] - 1)})} disabled={type !== 'children' && guests[type as keyof typeof guests] <= 1}>
                 <RemoveIcon fontSize="small" />
               </IconButton>
-              <Typography>{guests[type]}</Typography>
-              <IconButton size="small" onClick={() => setGuests({...guests, [type]: guests[type] + 1})}>
+              <Typography>{guests[type as keyof typeof guests]}</Typography>
+              <IconButton size="small" onClick={() => setGuests({...guests, [type]: guests[type as keyof typeof guests] + 1})}>
                 <AddIcon fontSize="small" />
               </IconButton>
             </Box>
