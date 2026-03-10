@@ -10,6 +10,7 @@ import HotelRooms from "../roomsPackagesPage/roomsPackagesPage"
 import ExclusiveOffers from "../exclusive packages/exclusivePage"
 import ExclusiveRatings from "../exclusiveRatings/ratingPage"
 import OffersPage from "../specialOffers/OffersPage"
+import Footer from "../../components/footer/Footer"
 
 
 const Layout = () => {
@@ -29,14 +30,13 @@ const Layout = () => {
                 <div className="mt-6">
                     <FacilityPage />
                 </div>
-                <div className="relative">
-                    <HotelRooms />
-                    <div className="absolute bottom-[-50px] left-0 right-0">
+                <div className="relative p-16">
+                    <div className="absolute -bottom-17.5 left-0 right-0">
                         <TextLineBanner />
                     </div>
                 </div>
 
-                <div>
+                <div className="pt-8">
                     <ExclusiveOffers />
                 </div>
                 <div>
@@ -48,6 +48,9 @@ const Layout = () => {
                 <div>
                     <OffersPage />
 
+                </div>
+                <div className="mt-16">
+                    <Footer />
                 </div>
             </Box>
         </Box>

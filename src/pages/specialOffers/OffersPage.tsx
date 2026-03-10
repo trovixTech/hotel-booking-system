@@ -6,6 +6,7 @@ import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import coconutLogo from "../../../public/offerPageLogo/coconut-white-beach-sand-near-ocean-sunny-summer-day_158538-13548.avif";
 
 const NewsletterSection = () => {
   // AOS සක්‍රීය කිරීම
@@ -28,7 +29,15 @@ const NewsletterSection = () => {
     <Box sx={{ backgroundColor: '#fdfaf5', pt: 10, pb: 0, textAlign: 'center', overflow: 'hidden' }}>
       
       {/* 1. පොල් ගෙඩිය සහ මාතෘකාව (Fade Down Animation) */}
-      <Box data-aos="fade-down">
+      <Box data-aos="fade-down" sx={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+        <Box sx={{ mb: 2, width: '70px', height: '70px', overflow: 'hidden', borderRadius: '100%' }}>
+          <img 
+            src={coconutLogo}
+            alt="Icon" 
+            style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
+            className='animate-bounce '
+          />
+        </Box>
         <Typography 
           variant="h3" 
           sx={{ 
