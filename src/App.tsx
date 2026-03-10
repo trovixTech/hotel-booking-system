@@ -25,11 +25,9 @@ const App = () => {
 
   return (
     <Box component="main">
-      {loading ? (
-        <Loader />
-      ) : (
+      
         <Layout />
-      )}
+    
     </Box>
   );
 };
